@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	  <meta charset="utf-8">
+	  <title>Home</title>
+  	  <link rel="stylesheet" href="styles.css">         
+    </head>
+     	<body>
+				  <div class="header">
+				    <h1>Ben Hanson</h1>
+				    <h2>Bachelor of Science in Information Technology Management</h2>
+				    <h3>University of Minnesota<br>benhanson629@gmail.com</h3>
+
+				  </div>
+
+				 <div class="bottom-container">
+				 <div class="slideshow-container">
+				 	
+
+				<!-- Senior Project --> 
+				<div class="mySlideshow fade">
+				  <div class="numbertext">1 / 5</div>
+					  <a href="seniorproject.html">
+					  	<img src="images/seniorproj.png" style="width:100%">
+					  </a>
+				  <div class="text"><strong>Senior Information Technology Project</strong></div>
+				</div>
+
+				<!-- Website Development -->
+				<div class="mySlideshow fade">
+				  <div class="numbertext">2 / 5</div>
+					  <a href="webdev.html">
+					  	<img src="images/webdev.jpeg" style="width:100%">
+					  </a>
+				  <div class="text"><strong>Website Development</strong></div>
+				</div>
+
+				<!-- Database Management -->
+				<div class="mySlideshow fade">
+				  <div class="numbertext">3 / 5</div>
+					  <a href="database.html">
+					  	<img src="images/databas.png" style="width:100%">
+					  </a>
+				  <div class="text"><strong>Database Creation</strong></div>
+				</div>
+
+				<!-- Software Project Management -->
+				<div class="mySlideshow fade">
+				  <div class="numbertext">4 / 5</div>
+					  <a href="spm.html">
+					  	<img src="images/spm.png" style="width:100%">
+					  </a>
+				  <div class="text"><strong>Software Project Management</strong></div>
+				</div>
+
+				<!-- Database Management -->
+				<div class="mySlideshow fade">
+				  <div class="numbertext">5 / 5</div>
+					  <a href="digitalmar.html">
+					  	<img src="images/digital.jpeg" style="width:100%">
+					  </a>
+				  <div class="text"><strong>Digital Marketing</strong></div>
+				</div>
+
+				<!-- previous/next slideshow buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				  <span class="dot" onclick="currentSlide(4)"></span>
+				  <span class="dot" onclick="currentSlide(5)"></span> 
+				</div>
+				</div>
+
+				<!-- slideshow JS -->
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlideshow");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+				      slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				      dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+				<footer>
+ 					<br>
+ 					<br>
+ 					<br>
+ 					<br>
+ 				</footer>
+
+			</body>
+		</html>

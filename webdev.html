@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	  <meta charset="utf-8">
+	  <title>Website Development</title>
+  	  <link rel="stylesheet" href="styles.css">         
+    </head>
+        <div class="topnav">
+            <a href="digitalmar.html">Digital Marketing</a>
+            <a href="spm.html">S.P.M.</a> 
+            <a href="database.html">Database Creation</a>
+            <a href="webdev.html">Website Dev</a>
+            <a href="seniorproject.html">Senior ITM Project</a>
+            <a href="index.html">Home</a>
+        </div>
+
+     	<body>
+	     	
+            <!-- SCROLL TO TOP BUTTON -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+          <p style="color: #00154F; font-size: 135%; font-family: Rockwell;font-weight: bold; line-height: 1.6em; float: center; text-align: center;">Website Development</p>
+
+          <div class="introduction">
+            <p class="intro">
+
+            Click <a href="http://www.websitedevaboutme.epizy.com">here</a> to open my Web Dev about me website
+     		     <br>
+            Click <a href="https://github.com/BenHanson683/WebDevCode.git">here</a> to open my Web Dev project code
+
+            </p>
+          
+
+            <p class="p1">
+                During this final project for the course Website Development, I was held responsible for constructing an eight page website, including the implementation of a home page and links between the secondary pages.  A navigation system was also deployed to show users where they are within the website.  Other requirements within this project included a table, a form, card sorts, an IA Diagram, two storyboard's, and a detailed CSS stylesheet.
+                <br>
+          </div>
+                
+            </p> 
+
+            <div class='photoz'>
+              <div class="photozTwo">
+
+            <!-------------- FIRST SLIDESHOW ------------->
+            <h1 style=" color: #00154F; font-size: 110%; font-family: Rockwell; font-weight: bold; line-height: 1.6em;">Card Sorts</h1>
+
+              <img class="mySlides" src="images/cardsort1.png" style="width:65%">
+              <img class="mySlides" src="images/cardsort2.png" style="width:65%">
+              <img class="mySlides" src="images/cardsort3.png" style="width:65%">
+
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+
+            <!-------------- END FIRST SLIDESHOW ------------->
+
+                <br>
+               
+
+                <h2 style=" color: #00154F; font-size: 110%; font-family: Rockwell; font-weight: bold; line-height: 1.6em;">IA Diagram<br></h2>
+                    <img id="ia" src="images/ia.png" alt="image" style="width:65%">
+                    <br>
+
+                <!-------------- SECOND SLIDESHOW ------------->
+                <br>
+                
+            <h3 style=" color: #00154F; font-size: 110%; font-family: Rockwell; font-weight: bold; line-height: 1.6em;">Storyboard's</h3>
+
+            <div class="w3-content w3-section">
+              <img class="mySlide" src="images/storyboard1.png" style="width:65%">
+              <img class="mySlide" src="images/storyboard2.png" style="width:65%">
+            </div>
+
+            <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlide");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+            <!--------------  END SECOND SLIDESHOW ------------->
+
+                <br>
+
+                <h4 style=" color: #00154F; font-size: 110%; font-family: Rockwell; font-weight: bold; line-height: 1.6em;">Site Structure<br></h4>
+                    <img id="structure" src="images/structure.png" alt="image" style="width:65% height:100%">
+                    <br>
+
+                  
+
+                <h5 style=" color: #00154F; font-size: 110%; font-family: Rockwell; font-weight: bold; line-height: 1.6em;">Theme/Visual Metaphor<br></h5>
+                    <img id="thm" src="images/thm.png" alt="image" style="width:65% height:100%">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div> 
+
+
+           
+
+     	</body>
+</html>
